@@ -5,39 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-
-    </style>
 </head>
 <body>
     <h1>新增餐廳</h1>
-    <%= form_for(Restaurant.new) do |f| %>
+    <%= form_for(@restaurant) do |f| %>
       <div class="field">
           <%= f.label :title %>
           <%= f.text_field :title %>
       </div>
 
-      <div>
+      <div class="field">
           <%= f.label :tel %>
           <%= f.text_field :tel %>
       </div>
 
-      <div>
+      <div class="field">
           <%= f.label :email %>
           <%= f.text_field :email %>
       </div>
 
-      <div>
+      <div class="field">
           <%= f.label :address %>
           <%= f.text_field :address %>
       </div>
 
-      <div>
+      <div class="field">
           <%= f.label :description %>
           <%= f.text_field :description %>
+          <%= f.submit %>
       </div>
 
-      <%= f.submit %>
     <% end %>
 
     <!-- <form action="/restaurants_list" method="post">
@@ -60,7 +57,6 @@
         <textarea name="" id="" cols="30" rows="10"></textarea>
         <br>
         <input type="submit">
-        <%= link_to "新增餐廳" , restaurants_path %>
     </form> -->
 </body>
 </html>

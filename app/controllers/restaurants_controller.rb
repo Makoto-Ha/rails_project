@@ -3,9 +3,10 @@ class RestaurantsController < ApplicationController
     end
 
     def new
+      @restaurant = Restaurant.new
     end
 
-    def list
+    def create
         # render html: "this is #{params[:abc]}"
         redirect_to "/restaurants"  
     end

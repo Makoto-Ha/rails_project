@@ -1,0 +1,26 @@
+body{
+    color: #f00;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.field{
+    color: #00f;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    margin: auto;
+}
+
+input[type=submit]{
+    color: #f00;
+    width: 200px;
+    margin: auto;
+}
+
+
